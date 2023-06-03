@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.8.6/clipboard-polyfill.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="imagenes/Logo.png" alt="Logo de Alura">
+            <h1>Encriptador Alura</h1>
+        </header>
+
+        <main>
+            <section>
+                <textarea class="input-texto" cols="35" rows="10" placeholder="Ingrese el texto aquí."></textarea>
+                <p class="info">Solo letras minúsculas y sin acentos</p>
+                <section class="botones">
+                    <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </section>
+            </section>
+            <section>
+                <textarea id="mensajes" class="caja-mensajes" cols="35" rows="10"></textarea>
+                <img id="logo2" class="logo-2" src="imagenes/Muñeco.png" alt="Muñeco">
+                <section class="mensaje">
+                    <textarea id="mensaje-1" class="texto-mensaje-1" placeholder="Ningún mensaje encontrado"></textarea>
+                    <textarea id="mensaje-2" class="texto-mensaje-2" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                </section>
+            </section>
+            <section>
+                <button id="copiando" class="copiar">Copiar</button>
+            </section>
+        </main>
+        <script src="script.js"></script>
+        <footer>
+            <p class="autor">Erika Muñoz Andrade 2023</p>
+            <a href="https://www.linkedin.com/in/erika-munoz-andrade"><img class="linkedin-logo" src="imagenes/linkedin.png" alt="LinkedIn profile"></a>
+            <a href="https://github.com/AndradeEM"><img class="github-logo" src="imagenes/github-mark.png" alt="Github profile"></a>
+        </footer>
+    </body>
+</html>
